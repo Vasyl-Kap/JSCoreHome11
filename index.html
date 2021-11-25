@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSCoreHome11</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geostar+Fill&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="clock-date">
+        <div class="date"></div>
+        <div class="clock"></div>
+    </div>
+    <div class="stopwatch">
+        <div class="seconds-buttons">
+            <div class="seconds">00:00:00:00</div>
+            <div class="buttons">
+                <input type="button" value="START" onclick="startStopwatch()" class="btn-startW">
+                <input type="button" value="LOOP" onclick="loopStopwatch()" class="btn-loopW">
+                <input type="button" value="STOP" onclick="stopStopwatch()" class="btn-stopW">
+                <input type="button" value="RESET" onclick="resetStopwatch()" class="btn-resetW">
+            </div>
+        </div>
+        <div class="save-seconds"></div>
+    </div>
+    <div class="timer">
+        <div class="minutes">
+            <h1 class="minTimer">25</h1>
+            <h3>MINUTES</h3>
+            <div class="set-buttons">
+                <input type="button" onclick="plusTime()" value="+" class="plus">
+                <input type="button" onclick="minusTime()" value="-" class="plus">
+            </div>
+        </div>
+        <div class="timer-block">
+            <div class="set-timer">00:00</div>
+            <div class="timer-buttons">
+                <input type="button" value="START" onclick="startTimer()" class="btn-startT">
+                <input type="button" value="STOP" onclick="stopTimer()" class="btn-stopT">
+                <input type="button" value="RESET" onclick="resetTimer()" class="btn-resetT">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
